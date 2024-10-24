@@ -54,7 +54,7 @@ def update_event(event_id:str, updated_event: Evento):
         existing_event.update(updated_event.dict(exclude_unset=True))
 
         if existing_event['capacity'] < len(existing_event['participants']):
-            return 'La capacidad no puede ser menor que el numero de parcitipantes actuales'
+            return existing_event
 
         container.replace_item(item=event_id, body=existing_event)
         return existing_event
