@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'dblappsrvc-dam'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1AE30B52CF8846F596FB645A74ED623E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_629F1F7B04134B7697D487F4D8A2BF73 }}
